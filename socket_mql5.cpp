@@ -212,7 +212,8 @@ wchar_t * __stdcall SocketErrorString(int error_code)
 }
 
 //+------------------------------------------------------------------+
-//|		DllMain				                                        |
+//|		DllMain	
+//|    https://msdn.microsoft.com/en-us/library/zxk0tw93.aspx
 //+------------------------------------------------------------------+
 BOOL __stdcall DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserved)
 {	
