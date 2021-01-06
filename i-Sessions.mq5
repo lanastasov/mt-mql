@@ -28,30 +28,32 @@
 //|  INDICATOR INPUT PARAMETERS       |
 //+-----------------------------------+
 input int    NumberOfDays=50;
-input string S1Begin   ="00:55";
-input string S1End     ="03:55";
-input color  S1Color   =clrDarkSlateGray;
-input string S2Begin   ="03:55";
-input string S2End     ="06:55";
-input color  S2Color   =clrDarkSlateGray;
-input string S3Begin   ="06:55";
-input string S3End     ="09:55";
-input color  S3Color   =clrDarkSlateGray;
-input string S4Begin   ="09:55";
-input string S4End     ="12:55";
-input color  S4Color   =clrDarkSlateGray;
-input string S5Begin   ="12:55";
-input string S5End     ="15:55";
-input color  S5Color   =clrDarkSlateGray;
-input string S6Begin   ="15:55";
-input string S6End     ="18:55";
-input color  S6Color   =clrDarkSlateGray;
-input string S7Begin   ="18:55";
-input string S7End     ="21:55";
-input color  S7Color   =clrDarkSlateGray;
-input string S8Begin   ="21:55";
-input string S8End     ="23:55";
-input color  S8Color   =clrDarkSlateGray;
+input string S1Begin   ="03:00";
+input string S1End     ="06:00";
+input color  S1Color   =PaleGoldenrod;
+input string S2Begin   ="09:00";
+input string S2End     ="12:00";
+input color  S2Color   =Honeydew;
+input string S3Begin   ="15:00";
+input string S3End     ="18:00";
+input color  S3Color   =PapayaWhip;
+
+// add aditional zones
+//input string S4Begin   ="09:55";
+//input string S4End     ="12:55";
+//input color  S4Color   =clrDarkSlateGray;
+//input string S5Begin   ="12:55";
+//input string S5End     ="15:55";
+//input color  S5Color   =clrDarkSlateGray;
+//input string S6Begin   ="15:55";
+//input string S6End     ="18:55";
+//input color  S6Color   =clrDarkSlateGray;
+//input string S7Begin   ="18:55";
+//input string S7End     ="21:55";
+//input color  S7Color   =clrDarkSlateGray;
+//input string S8Begin   ="21:55";
+//input string S8End     ="23:55";
+//input color  S8Color   =clrDarkSlateGray;
 //+-----------------------------------+
 
 //---- Declaration of integer variables of data starting point
@@ -121,11 +123,11 @@ int OnCalculate(
       DrawRectangle(dt,"S1"+string(i),S1Begin,S1End,S1Color,high,low);
       DrawRectangle(dt,"S2"+string(i),S2Begin,S2End,S2Color,high,low);
       DrawRectangle(dt,"S3"+string(i),S3Begin,S3End,S3Color,high,low);
-      DrawRectangle(dt,"S4"+string(i),S4Begin,S4End,S4Color,high,low);
-      DrawRectangle(dt,"S5"+string(i),S5Begin,S5End,S5Color,high,low);
-      DrawRectangle(dt,"S6"+string(i),S6Begin,S6End,S6Color,high,low);
-      DrawRectangle(dt,"S7"+string(i),S7Begin,S7End,S7Color,high,low);
-      DrawRectangle(dt,"S8"+string(i),S8Begin,S8End,S8Color,high,low);
+      //DrawRectangle(dt,"S4"+string(i),S4Begin,S4End,S4Color,high,low);
+      //DrawRectangle(dt,"S5"+string(i),S5Begin,S5End,S5Color,high,low);
+      //DrawRectangle(dt,"S6"+string(i),S6Begin,S6End,S6Color,high,low);
+      //DrawRectangle(dt,"S7"+string(i),S7Begin,S7End,S7Color,high,low);
+      //DrawRectangle(dt,"S8"+string(i),S8Begin,S8End,S8Color,high,low);
 
       dt=decDateTradeDay(dt);
       MqlDateTime ttt;
