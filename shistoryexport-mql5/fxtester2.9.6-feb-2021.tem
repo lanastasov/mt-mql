@@ -1,0 +1,527 @@
+EURUSD
+615 0 615 312
+2 0.8820 0 20 60 2 0 1 1 0.2000 0 1 0 0 1 0 1 0 1.000000 0.000000
+Normal
+<ColorScheme>
+  00FFF8F0
+  00000000
+  00808070
+  00000000
+  00000000
+  00FFFFFF
+  00000000
+  00000000
+  00008000
+  000000FF
+  0000FFFF
+  000000FF
+  000000FF
+  0000FFFF
+  008B3D48
+  008B3D48
+</ColorScheme>
+<PaintTools>
+</PaintTools>
+<timeframes>
+  10
+  <Timeframe>
+    1
+    <ChartIndicators>
+      <Indicator>
+        2140C38411 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214A5E7001 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        2160CA3F50 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+  <Timeframe>
+    3
+    <ChartIndicators>
+      <Indicator>
+        2141AB5404 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214B51BA19 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        2161B51C75 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+  <Timeframe>
+    5
+    <ChartIndicators>
+      <Indicator>
+        2141FA4E34 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214BA4DB60 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        216204E294 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+  <Timeframe>
+    15
+    <ChartIndicators>
+      <Indicator>
+        21422B7153 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214BD51314 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        2162362354 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+  <Timeframe>
+    30
+    <ChartIndicators>
+      <Indicator>
+        21423B7E48 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214BE5CC49 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        2162476954 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+  <Timeframe>
+    60
+    <ChartIndicators>
+      <Indicator>
+        214243EA06 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214BEF5120 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        21624F9729 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+  <Timeframe>
+    240
+    <ChartIndicators>
+      <Indicator>
+        2142486E10 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214BF3C663 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        2162540B93 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+  <Timeframe>
+    1440
+    <ChartIndicators>
+      <Indicator>
+        21424A1488 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214BF54D04 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        216255B107 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+  <Timeframe>
+    10080
+    <ChartIndicators>
+      <Indicator>
+        21424ADF72 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214BF60815 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        2162565D68 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+  <Timeframe>
+    43200
+    <ChartIndicators>
+      <Indicator>
+        21424B6C33 "Moving average" 10
+        Moving average (20, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        20
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        000000FF 0 1
+      </Indicator>
+      <Indicator>
+        214BF66639 "Moving average" 10
+        Moving average (50, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        50
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00008000 0 1
+      </Indicator>
+      <Indicator>
+        216256BB40 "Moving average" 10
+        Moving average (200, 0, 0, Exponential (EMA), Close)
+        50
+        0 
+        
+        200
+        0
+        0
+        Exponential (EMA)
+        Close
+        
+        00000000 0 1
+      </Indicator>
+    </ChartIndicators>
+    <OscWindows>
+      0
+    </OscWindows>
+  </Timeframe>
+</timeframes>
