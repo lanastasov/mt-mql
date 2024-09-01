@@ -58,7 +58,7 @@ void OnTick()
         int error = GetLastError();
         Print("Failed to copy EMA value. Error code: ", error);
     }
-    
+
     MqlRates rates[];
     if(CopyRates(_Symbol, PERIOD_CURRENT, 0, 1, rates) > 0)
     {
@@ -70,4 +70,6 @@ void OnTick()
         Print("Failed to get rates data. Error code: ", GetLastError());
     }
 
+    double distancePercent = ((closingPrice - emaValue) / emaValue) * 100;
+    Print("Distance in Percent: ", distancePercent, "%");
 }
