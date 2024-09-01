@@ -11,6 +11,7 @@
 input ENUM_APPLIED_PRICE AppliedPrice = PRICE_CLOSE; // Applied price for EMA calculation
 
 int EmaHandle;
+int DailyEmaHandle;
 
 //+------------------------------------------------------------------+
 //| Expert initialization function                                   |
@@ -21,6 +22,13 @@ int OnInit()
     EmaHandle = iMA(_Symbol, PERIOD_CURRENT, 200, 0, MODE_EMA, AppliedPrice);
     
     if(EmaHandle == INVALID_HANDLE)
+    {
+        Print("Failed to create EMA indicator handle");
+        return(INIT_FAILED);
+    }
+    
+    DailyEmaHandle = iMA(_Symbol, PERIOD_D1, 200, 0, MODE_EMA, AppliedPrice);
+    if(DailyEmaHandle == INVALID_HANDLE)
     {
         Print("Failed to create EMA indicator handle");
         return(INIT_FAILED);
@@ -46,11 +54,15 @@ void OnTick()
 {
     // Array to store the EMA values
     double emaValues[];
+    double closingPrice;
+    double emaValue;
+    double dailyemaValues[];
+    double dailyemaValue;
     
     // Copy the last EMA value
     if(CopyBuffer(EmaHandle, 0, 0, 1, emaValues) > 0)
     {
-        double emaValue = emaValues[0];
+        emaValue = emaValues[0];
         Print("Current 200 EMA value: ", emaValue);
     }
     else
@@ -58,18 +70,34 @@ void OnTick()
         int error = GetLastError();
         Print("Failed to copy EMA value. Error code: ", error);
     }
-
-    MqlRates rates[];
-    if(CopyRates(_Symbol, PERIOD_CURRENT, 0, 1, rates) > 0)
+   
+    if(CopyBuffer(DailyEmaHandle, 0, 0, 1, dailyemaValues) > 0)
     {
-        double closingPrice = rates[0].close;
-        Print("Current closing price of ", _Symbol, ": ", closingPrice);
+        dailyemaValue = dailyemaValues[0];
+        Print("Current Daily 200 EMA value: ", dailyemaValue);
     }
     else
     {
-        Print("Failed to get rates data. Error code: ", GetLastError());
+        int error = GetLastError();
+        Print("Failed to copy EMA value. Error code: ", error);
     }
-
+    
+    MqlRates rates[];
+    if(CopyRates(_Symbol, PERIOD_CURRENT, 0, 1, rates) > 0)
+    {
+       closingPrice = rates[0].close;
+       Print("Current closing price of ", _Symbol, ": ", closingPrice);
+    }
+    else
+    {
+       Print("Failed to get rates data. Error code: ", GetLastError());
+    }
+    
+        
     double distancePercent = ((closingPrice - emaValue) / emaValue) * 100;
     Print("Distance in Percent: ", distancePercent, "%");
+    
+    double dailydistancePercent = ((closingPrice - dailyemaValue) / dailyemaValue) * 100;
+    Print("Daily Distance in Percent: ", dailydistancePercent, "%");    
+    
 }
