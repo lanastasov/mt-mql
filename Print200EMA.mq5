@@ -34,24 +34,6 @@ int OnInit()
         return(INIT_FAILED);
     }
     
-    return(INIT_SUCCEEDED);
-}
-
-//+------------------------------------------------------------------+
-//| Expert deinitialization function                                 |
-//+------------------------------------------------------------------+
-void OnDeinit(const int reason)
-{
-    // Release the indicator handle
-    if(EmaHandle != INVALID_HANDLE)
-        IndicatorRelease(EmaHandle);
-}
-
-//+------------------------------------------------------------------+
-//| Expert tick function                                             |
-//+------------------------------------------------------------------+
-void OnTick()
-{
     // Array to store the EMA values
     double emaValues[];
     double closingPrice;
@@ -98,6 +80,43 @@ void OnTick()
     Print("Distance in Percent: ", distancePercent, "%");
     
     double dailydistancePercent = ((closingPrice - dailyemaValue) / dailyemaValue) * 100;
-    Print("Daily Distance in Percent: ", dailydistancePercent, "%");    
+    Print("Daily Distance in Percent: ", dailydistancePercent, "%");   
+    
+    
+    // Create a text label on the chart
+    string labelName = "Daily-200EMA_Distance_Label-To-Current-Close-Price";
+    if (ObjectFind(0, labelName) == -1)
+    {
+        ObjectCreate(0, labelName, OBJ_LABEL, 0, 0, 0);
+    }
+
+    // Set the label properties
+    ObjectSetString(0, labelName, OBJPROP_TEXT, dailydistancePercent);
+    ObjectSetInteger(0, labelName, OBJPROP_CORNER, CORNER_RIGHT_UPPER);
+    ObjectSetInteger(0, labelName, OBJPROP_XDISTANCE, 100);
+    ObjectSetInteger(0, labelName, OBJPROP_YDISTANCE, 20);
+    ObjectSetInteger(0, labelName, OBJPROP_COLOR, clrBlack);
+    ObjectSetInteger(0, labelName, OBJPROP_FONTSIZE, 12);
+    
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//| Expert deinitialization function                                 |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Release the indicator handle
+    if(EmaHandle != INVALID_HANDLE)
+        IndicatorRelease(EmaHandle);
+}
+
+//+------------------------------------------------------------------+
+//| Expert tick function                                             |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    
+     
     
 }
